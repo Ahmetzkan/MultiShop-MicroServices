@@ -41,7 +41,7 @@ namespace MultiShop.Catalog.Controllers
         public async Task<IActionResult> UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto)
         {
             await _categoryService.UpdateCategoryAsync(updateCategoryDto);
-            return Ok("Category added succesfully");
+            return Ok("Category updated succesfully");
         }
 
         [HttpDelete("{id}")]

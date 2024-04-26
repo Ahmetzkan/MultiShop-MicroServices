@@ -41,7 +41,7 @@ namespace MultiShop.Catalog.Controllers
         public async Task<IActionResult> UpdateProductDetailAsync(UpdateProductDetailDto updateProductDetailsDto)
         {
             await _ProductDetailsService.UpdateProductDetailAsync(updateProductDetailsDto);
-            return Ok("Product Details added succesfully");
+            return Ok("Product Details updated succesfully");
         }
 
         [HttpDelete("{id}")]
